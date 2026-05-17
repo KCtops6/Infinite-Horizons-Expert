@@ -1,9 +1,10 @@
 ServerEvents.recipes(event => {
     const BANNED_ITEMS = [
-        'minecraft:wooden_shovel', 
-        'minecraft:wooden_pickaxe', 
-        'minecraft:wooden_axe',
-        'minecraft:wooden_hoe'
+        /minecraft:.*_shovel/,
+        /minecraft:.*_pickaxe/,
+        /minecraft:.*_axe/,
+        /minecraft:.*_hoe/,
+        /minecraft:.*_sword/
     ];
 
     BANNED_ITEMS.forEach(item => {
