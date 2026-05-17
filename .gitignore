@@ -27,3 +27,4 @@ config/almostunified/startup.json
 config/create-client.toml
 config/flywheel-client.toml
 config/ponder-client.toml
+user-prefs.json
