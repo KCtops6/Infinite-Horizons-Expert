@@ -21,3 +21,9 @@ kubejs/README.txt
 config/ftbxmodcompat.snbt
 config/sidebar_buttons.json
 defaultconfigs/
+config/almostunified/debug.json
+config/almostunified/duplicates.json
+config/almostunified/startup.json
+config/create-client.toml
+config/flywheel-client.toml
+config/ponder-client.toml
