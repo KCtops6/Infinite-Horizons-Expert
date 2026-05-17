@@ -18,3 +18,6 @@ config/defaultworldtype/world-presets.txt
 config/collective.json5
 config/villagespawnpoint.json5
 kubejs/README.txt
+config/ftbxmodcompat.snbt
+config/sidebar_buttons.json
+defaultconfigs/
