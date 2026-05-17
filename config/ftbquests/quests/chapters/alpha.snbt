@@ -1,0 +1,857 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "alpha"
+	group: ""
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_complete: true
+	id: "2D007C0643F69747"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Infinite Horizons Expert is an advanced, harder version of the kitchen-sink Infinite Horizons modpack. Check out the Infinite Horizons Expert Curseforge or GitHub page if you want to give feedback."]
+			id: "61A708E2863694A6"
+			rewards: [{
+				id: "249B8F63BB9D542A"
+				item: "minecraft:cake"
+				type: "item"
+			}]
+			subtitle: "Entering Infinite Horizons Expert"
+			tasks: [{
+				id: "7500DD2EC78D3159"
+				title: "Welcome!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["045107111F91A9AE"]
+			description: ["To find a farmer, you need to find his workstation, which is a &lComposter&l."]
+			id: "69A94A785ADE0ABD"
+			tasks: [{
+				icon: "minecraft:composter"
+				id: "789DC8FE4BD89686"
+				observe_type: 0
+				timer: 0L
+				title: "Observe a Composter"
+				to_observe: "minecraft:composter"
+				type: "observation"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["61A708E2863694A6"]
+			description: ["Villagers are essential in the early game. Your first villager you need to interface with is a &lFarmer&l."]
+			id: "045107111F91A9AE"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:player_head"
+					tag: {
+						SkullOwner: {
+							Id: [I;
+								1865396404
+								-228439589
+								-1149097413
+								274267554
+							]
+							Properties: {
+								textures: [{
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDBjYzBhMTI1Nzc4OThlNzE2N2M0M2NmOWZlOGNiMjg5NTYzOTIxYjcwOTQ2MDEyYTYwODkzY2FiNzZlNTQ5In19fQ=="
+								}]
+							}
+						}
+						display: {
+							Lore: [
+								"{\"text\":\"Custom Head ID: 90692\",\"color\":\"gray\",\"italic\":false}"
+								"{\"text\":\"www.minecraft-heads.com\",\"color\":\"blue\",\"italic\":false}"
+							]
+							Name: "{\"text\":\"Villager\",\"color\":\"gold\",\"underlined\":true,\"bold\":true,\"italic\":false}"
+						}
+					}
+				}
+				id: "0B812A391DB8171F"
+				observe_type: 5
+				timer: 0L
+				title: "Interface with a Villager"
+				to_observe: "minecraft:villager"
+				type: "observation"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["61A708E2863694A6"]
+			description: ["You can not punch wood in Infinite Horizons Expert. You need to trade for tools that can harvest trees for you. To get some emeralds, you need to farm some crops first. You can also take advantage of the piles of hay throughout the village."]
+			id: "5AEF618B55C80FE5"
+			rewards: [
+				{
+					id: "780C883B18364971"
+					item: "minecraft:wheat"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "4409831A52B967C8"
+					item: "minecraft:carrot"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "7AC5F126556524B6"
+					item: "minecraft:potato"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "0E507FB767E7C457"
+					item: "minecraft:beetroot"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			subtitle: "Village Farming"
+			tasks: [{
+				id: "0AF7DFE45E8A55A6"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "infinite_horizons_expert:novice_farmer_crops"
+					}
+				}
+				title: "Harvest crops"
+				type: "item"
+			}]
+			title: "Harvest crops"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"69A94A785ADE0ABD"
+				"5AEF618B55C80FE5"
+			]
+			description: ["Once you have crops harvested, you can trade those for emeralds."]
+			id: "6B0D6DC7495CE683"
+			rewards: [{
+				id: "488FF4BD60200F56"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			subtitle: "Making Money"
+			tasks: [{
+				id: "3B181289AB3C01EF"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6B0D6DC7495CE683"]
+			description: ["To get tools in the early game, you need to trade. Find a toolsmith villager. You may need to move to a different village. Make sure you have plenty of food in order to sustain that travel."]
+			id: "165144A8A7A2E6FD"
+			rewards: [{
+				id: "31764BDABF2BF238"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			subtitle: "Finding a Toolsmith Villager"
+			tasks: [{
+				icon: "minecraft:smithing_table"
+				id: "265816C7CD387648"
+				observe_type: 0
+				timer: 0L
+				title: "Observe a Smithing Table"
+				to_observe: "minecraft:smithing_table"
+				type: "observation"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B0D6DC7495CE683"]
+			description: ["To get tools in the early game, you need to trade. Find a weaponsmith villager. You may need to move to a different village. Make sure you have plenty of food in order to sustain that travel."]
+			id: "41C3F5A2C39CB65B"
+			rewards: [{
+				id: "7D63C6D0BCDA19F6"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			subtitle: "Finding a Weaponsmith Villager"
+			tasks: [{
+				icon: "minecraft:grindstone"
+				id: "0AEF270DE3146E5C"
+				observe_type: 0
+				timer: 0L
+				title: "Observe a Grindstone"
+				to_observe: "minecraft:grindstone"
+				type: "observation"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"41C3F5A2C39CB65B"
+				"165144A8A7A2E6FD"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Once you have enough emeralds and find a toolsmith or weaponsmith villager, you can finally obtain your first axe!"]
+			id: "71A1B0A8EB527997"
+			rewards: [{
+				id: "344F4F194D676221"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			subtitle: "First Important Tool"
+			tasks: [{
+				id: "47A0118309804D6B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "infinite_horizons_expert:novice_villager_axes"
+					}
+				}
+				title: "Obtain a Stone or Iron Axe"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["71A1B0A8EB527997"]
+			id: "62086C118993BF30"
+			rewards: [
+				{
+					count: 16
+					id: "51870B65A70E7294"
+					item: "minecraft:oak_log"
+					random_bonus: 32
+					type: "item"
+				}
+				{
+					id: "403B6ED029B8C803"
+					item: "minecraft:oak_sapling"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 16L
+				id: "5F47B08E3968C8B1"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6B0D6DC7495CE683"]
+			description: ["To get some early game armor, you need to find an armorer villager."]
+			hide_dependency_lines: false
+			hide_dependent_lines: true
+			id: "2F6BCEFD398CEE9A"
+			rewards: [{
+				id: "75169ED3B01071C9"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			subtitle: "Finding a Armorer Villager"
+			tasks: [{
+				icon: "minecraft:blast_furnace"
+				id: "1A0F9EF779B6C413"
+				observe_type: 0
+				timer: 0L
+				title: "Observe a Blast Furnace"
+				to_observe: "minecraft:blast_furnace"
+				type: "observation"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2F6BCEFD398CEE9A"]
+			id: "2C11DB60A9FEAE8F"
+			optional: true
+			rewards: [{
+				id: "66A543C9AEE1DD5A"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			tasks: [{
+				id: "4AEF2B5A92AB3072"
+				item: {
+					Count: 1
+					id: "minecraft:iron_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.25d
+			y: 3.75d
+		}
+		{
+			dependencies: ["2F6BCEFD398CEE9A"]
+			id: "6263FA56AF2DF5B0"
+			optional: true
+			rewards: [{
+				id: "10C36BAF61D1E9E4"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			tasks: [{
+				id: "176107B197A1FAF4"
+				item: {
+					Count: 1
+					id: "minecraft:iron_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.75d
+			y: 3.75d
+		}
+		{
+			dependencies: ["2F6BCEFD398CEE9A"]
+			id: "377F91915485F935"
+			optional: true
+			rewards: [{
+				id: "485E4CD51AF8B03D"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			tasks: [{
+				id: "3410EBBD56CBB0D9"
+				item: {
+					Count: 1
+					id: "minecraft:iron_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.75d
+			y: 4.25d
+		}
+		{
+			dependencies: ["2F6BCEFD398CEE9A"]
+			id: "4C6917A6DCD484FF"
+			optional: true
+			rewards: [{
+				id: "307EDAF0E501CACD"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			tasks: [{
+				id: "3F190212114D4EF1"
+				item: {
+					Count: 1
+					id: "minecraft:iron_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.25d
+			y: 4.25d
+		}
+		{
+			dependencies: ["2F6BCEFD398CEE9A"]
+			id: "79FEB2224EFF94D7"
+			tasks: [{
+				id: "0165845EA45A1543"
+				item: {
+					Count: 1
+					id: "minecraft:shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2F6BCEFD398CEE9A"]
+			id: "2C8F018BF2D64E50"
+			optional: true
+			rewards: [{
+				count: 3
+				id: "577799884DC6EBFD"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			tasks: [{
+				id: "41C8A74BBA60BABE"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.75d
+			y: 4.75d
+		}
+		{
+			dependencies: ["2F6BCEFD398CEE9A"]
+			id: "0A15C7F2415DBE1F"
+			optional: true
+			rewards: [{
+				count: 3
+				id: "68CC71FFEF5E5FF5"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			tasks: [{
+				id: "0D8556EBAC1EAE17"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.25d
+			y: 4.75d
+		}
+		{
+			dependencies: ["2F6BCEFD398CEE9A"]
+			id: "744627AA6EB22DEF"
+			optional: true
+			rewards: [{
+				count: 3
+				id: "5A11260A8FF5420E"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			tasks: [{
+				id: "2340945D1C31C644"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["2F6BCEFD398CEE9A"]
+			id: "57ACA4B101847FE1"
+			optional: true
+			rewards: [{
+				count: 3
+				id: "1E9677F050D13207"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			tasks: [{
+				id: "4E568C40D31E23D0"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.25d
+			y: 5.25d
+		}
+		{
+			dependencies: ["2F6BCEFD398CEE9A"]
+			id: "26E27CC87C381338"
+			optional: true
+			rewards: [{
+				id: "1877C1E531860188"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			tasks: [{
+				id: "5BEA8474BA62968C"
+				item: {
+					Count: 1
+					id: "minecraft:chainmail_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.75d
+			y: 4.75d
+		}
+		{
+			dependencies: ["2F6BCEFD398CEE9A"]
+			id: "6BCFE98B16BAE416"
+			optional: true
+			rewards: [{
+				id: "46478C7157C571B1"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			tasks: [{
+				id: "10E6667D1942C356"
+				item: {
+					Count: 1
+					id: "minecraft:chainmail_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.25d
+			y: 4.75d
+		}
+		{
+			dependencies: ["2F6BCEFD398CEE9A"]
+			id: "724E8302D24810F8"
+			optional: true
+			rewards: [{
+				id: "492A4DC578770891"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			tasks: [{
+				id: "60D509E6BB3D2642"
+				item: {
+					Count: 1
+					id: "minecraft:chainmail_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["2F6BCEFD398CEE9A"]
+			id: "160C68D5F485F261"
+			optional: true
+			rewards: [{
+				id: "08491CD70914137E"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			tasks: [{
+				id: "403051B307F38B15"
+				item: {
+					Count: 1
+					id: "minecraft:chainmail_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.25d
+			y: 5.25d
+		}
+		{
+			dependencies: ["6B0D6DC7495CE683"]
+			description: ["Finding a butcher villager can be useful for obtaining a good source of food, but is not required for progression."]
+			hide_dependency_lines: true
+			id: "1B89B8165CCCED3B"
+			optional: true
+			rewards: [{
+				id: "2F08F27FAC36067B"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			subtitle: "Finding a Butcher Villager"
+			tasks: [{
+				icon: "minecraft:smoker"
+				id: "2C6A878D5C76C8CC"
+				observe_type: 0
+				timer: 0L
+				title: "Observe a Smoker"
+				to_observe: "minecraft:smoker"
+				type: "observation"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6B0D6DC7495CE683"]
+			description: ["A cartographer villager does not necessarily offer anything useful for progression."]
+			hide_dependency_lines: true
+			id: "263B3FFAE9568861"
+			optional: true
+			rewards: [{
+				id: "49C83BA9741D5696"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			subtitle: "Finding a Cartographer Villager"
+			tasks: [{
+				icon: "minecraft:cartography_table"
+				id: "277AB686AD1F62C5"
+				observe_type: 0
+				timer: 0L
+				title: "Observe a Cartography Table"
+				to_observe: "minecraft:cartography_table"
+				type: "observation"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6B0D6DC7495CE683"]
+			description: ["Cleric villagers offer items that you would not normally obtain early-game."]
+			id: "0AA2303164BDE3AA"
+			rewards: [{
+				id: "2C978751AB48520D"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			subtitle: "Finding a Cleric Villager"
+			tasks: [{
+				icon: "minecraft:brewing_stand"
+				id: "67FCFAFD7168DAB5"
+				observe_type: 0
+				timer: 0L
+				title: "Observe a Brewing Stand"
+				to_observe: "minecraft:brewing_stand"
+				type: "observation"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6B0D6DC7495CE683"]
+			description: ["If you want a source of fish, the fisherman villager is for you."]
+			hide_dependency_lines: true
+			id: "02EF5D1955B9DE0C"
+			optional: true
+			rewards: [{
+				id: "3AA73D5771BE1A32"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			subtitle: "Finding a Fisherman Villager"
+			tasks: [{
+				icon: "minecraft:barrel"
+				id: "17D7D0227B7AC92E"
+				observe_type: 0
+				timer: 0L
+				title: "Observe a Barrel"
+				to_observe: "minecraft:barrel"
+				type: "observation"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B0D6DC7495CE683"]
+			description: ["Ranged weapons may be a good idea, but not completely necessary. The stick to emerald trade is disabled in this modpack."]
+			hide_dependency_lines: true
+			id: "7063C8F6CB9B44A5"
+			optional: true
+			rewards: [{
+				id: "44576BFA17EA0CF4"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			subtitle: "Finding a Fletcher Villager"
+			tasks: [{
+				icon: "minecraft:fletching_table"
+				id: "208C56499A51389F"
+				observe_type: 0
+				timer: 0L
+				title: "Observe a Fletching Table"
+				to_observe: "minecraft:fletching_table"
+				type: "observation"
+			}]
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6B0D6DC7495CE683"]
+			description: ["Early game enchantments are always a bonus, but not required for progression."]
+			hide_dependency_lines: true
+			id: "253AA74295F0EDE5"
+			optional: true
+			rewards: [{
+				id: "678C155E3414127C"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 0.5d
+			subtitle: "Finding a Librarian Villager"
+			tasks: [{
+				icon: "minecraft:lectern"
+				id: "24CA187B2567C5D4"
+				observe_type: 0
+				timer: 0L
+				title: "Observe a Lectern"
+				to_observe: "minecraft:lectern"
+				type: "observation"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["165144A8A7A2E6FD"]
+			id: "0497D2E981BC696F"
+			rewards: [{
+				id: "507B8B0E7355D3AE"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "3BAF735F2F365140"
+				item: {
+					Count: 1
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["41C3F5A2C39CB65B"]
+			id: "1E65F98E8A58E689"
+			rewards: [{
+				id: "074181AEA3F792FB"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "68393C46C13CD2D7"
+				item: {
+					Count: 1
+					id: "minecraft:iron_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["165144A8A7A2E6FD"]
+			id: "24987E6C024342A2"
+			tasks: [{
+				id: "02545DAA5EFFDCDF"
+				item: {
+					Count: 1
+					id: "minecraft:stone_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["165144A8A7A2E6FD"]
+			description: ["You can finally expand your farming setup!"]
+			id: "6E79E3484E0ADEC5"
+			rewards: [{
+				id: "1ABC84A8D36936A8"
+				item: "minecraft:emerald"
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "1C7A4AAF96AE224B"
+				item: {
+					Count: 1
+					id: "minecraft:stone_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["62086C118993BF30"]
+			id: "6D4B29F424F7C57D"
+			tasks: [{
+				id: "77AC2308D524A452"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+	]
+	title: "Alpha"
+}
