@@ -1,9 +1,8 @@
 {
   "modPriorities": [
     "minecraft",
+    "infinite_resources",
     "kubejs",
-    "ftbmaterials",
-    "crafttweaker",
     "create",
     "thermal",
     "immersiveengineering",
