@@ -6,9 +6,12 @@ ServerEvents.recipes(event => {
         /minecraft:.*_hoe/,
         /minecraft:.*_sword/
     ];
-
     BANNED_ITEMS.forEach(item => {
         event.remove({ input: item });
         event.remove({ output: item });
+    });
+    let vanillaIngots = ['copper', 'iron', 'gold'];
+    vanillaIngots.forEach(ingot => {  
+        event.remove({ id: `create:pressing/${ingot}_ingot` });
     });
 });
