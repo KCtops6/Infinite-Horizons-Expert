@@ -553,3 +553,12 @@
 		#Enable/Disable gold plate
 		enable_plate = true
 
+	[materials.copper]
+		#Texture style selection for copper_nugget. Options: IRON, GOLD, COPPER
+		#Allowed Values: IRON, GOLD, COPPER
+		nugget_texture_style = "IRON"
+		#Enable/Disable copper dust
+		enable_dust = true
+		#Enable/Disable copper plate
+		enable_plate = true
+
