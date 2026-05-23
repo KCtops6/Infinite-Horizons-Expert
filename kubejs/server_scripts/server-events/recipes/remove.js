@@ -14,4 +14,7 @@ ServerEvents.recipes(event => {
     vanillaIngots.forEach(ingot => {  
         event.remove({ id: `create:pressing/${ingot}_ingot` });
     });
+    let removedIDs = [
+        'create:crafting/kinetics/millstone'
+    ]
 });
