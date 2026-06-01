@@ -5,6 +5,7 @@
 	group: ""
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_complete: true
+	icon: "minecraft:oak_log"
 	id: "2D007C0643F69747"
 	order_index: 0
 	quest_links: [ ]
@@ -303,7 +304,7 @@
 				type: "item"
 			}]
 			x: 2.25d
-			y: 3.75d
+			y: 4.75d
 		}
 		{
 			dependencies: ["2F6BCEFD398CEE9A"]
@@ -328,7 +329,7 @@
 				type: "item"
 			}]
 			x: 1.75d
-			y: 3.75d
+			y: 4.75d
 		}
 		{
 			dependencies: ["2F6BCEFD398CEE9A"]
@@ -353,7 +354,7 @@
 				type: "item"
 			}]
 			x: 1.75d
-			y: 4.25d
+			y: 5.25d
 		}
 		{
 			dependencies: ["2F6BCEFD398CEE9A"]
@@ -378,7 +379,7 @@
 				type: "item"
 			}]
 			x: 2.25d
-			y: 4.25d
+			y: 5.25d
 		}
 		{
 			dependencies: ["2F6BCEFD398CEE9A"]
@@ -420,7 +421,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.75d
+			x: 3.75d
 			y: 4.75d
 		}
 		{
@@ -446,7 +447,7 @@
 				}
 				type: "item"
 			}]
-			x: 3.25d
+			x: 4.25d
 			y: 4.75d
 		}
 		{
@@ -472,7 +473,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.75d
+			x: 3.75d
 			y: 5.25d
 		}
 		{
@@ -498,7 +499,7 @@
 				}
 				type: "item"
 			}]
-			x: 3.25d
+			x: 4.25d
 			y: 5.25d
 		}
 		{
@@ -523,7 +524,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.75d
+			x: 2.75d
 			y: 4.75d
 		}
 		{
@@ -548,7 +549,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.25d
+			x: 3.25d
 			y: 4.75d
 		}
 		{
@@ -573,7 +574,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.75d
+			x: 2.75d
 			y: 5.25d
 		}
 		{
@@ -598,7 +599,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.25d
+			x: 3.25d
 			y: 5.25d
 		}
 		{
@@ -851,6 +852,262 @@
 			}]
 			x: 9.0d
 			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3336071B1E3ACE63"
+				"29D9E67A8135A881"
+			]
+			description: ["Once you have access to Andesite Alloy, you can start towards automating your resources. First, you need to think about rotational energy generation..."]
+			icon: "create:andesite_alloy"
+			id: "4887C816B0CE0B99"
+			rewards: [{
+				id: "1CFDBE9F02E1800E"
+				item: "create:andesite_alloy"
+				random_bonus: 2
+				type: "item"
+			}]
+			subtitle: "Entering the Automation Age"
+			tasks: [
+				{
+					id: "6F3318843A85FAA7"
+					item: "kubejs:andesite_alloy_mixture"
+					type: "item"
+				}
+				{
+					id: "10B7FA2D8FC8F3B4"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6D4B29F424F7C57D"]
+			description: ["Breaking grass/dirt/dirt path blocks with a trowel gets you pebbles. "]
+			icon: "minecraft:cobblestone"
+			id: "33CCBAF3DC20D5EF"
+			rewards: [{
+				auto: "invisible"
+				id: "4FE7B2466E05B857"
+				ignore_reward_blocking: true
+				stage: "can_mine_cobble"
+				title: "Cobblestone Mining Ability"
+				type: "gamestage"
+			}]
+			tasks: [
+				{
+					id: "7C332BEDF90CD43E"
+					item: {
+						Count: 1
+						id: "infinite_horizons_tweaks:wooden_trowel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "01DC47B25740C381"
+					item: "infinite_horizons_tweaks:stone_pebble"
+					type: "item"
+				}
+				{
+					id: "4694647DDF083262"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+			]
+			title: "First Cobblestone"
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["33CCBAF3DC20D5EF"]
+			description: ["A stone trowel provides better and more frequent pebble drops."]
+			id: "14E66F259B7C384E"
+			tasks: [{
+				id: "6E024A0B428090CC"
+				item: {
+					Count: 1
+					id: "infinite_horizons_tweaks:stone_trowel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["14E66F259B7C384E"]
+			icon: "minecraft:andesite"
+			id: "3336071B1E3ACE63"
+			tasks: [
+				{
+					id: "51B3C0E32294F48F"
+					item: "infinite_horizons_tweaks:andesite_pebble"
+					type: "item"
+				}
+				{
+					id: "418D8DF084AD7E02"
+					item: "minecraft:andesite"
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"14E66F259B7C384E"
+				"6D303B7E52C34C8C"
+			]
+			id: "0F4EE45EBC186660"
+			tasks: [{
+				id: "754147FE82750B36"
+				item: "minecraft:iron_nugget"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33CCBAF3DC20D5EF"]
+			id: "0671C036CBBC2ACE"
+			tasks: [{
+				id: "6339EB41E7CD7EED"
+				item: {
+					Count: 1
+					id: "infinite_horizons_tweaks:stone_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0671C036CBBC2ACE"]
+			id: "6D303B7E52C34C8C"
+			tasks: [{
+				id: "1A6F5B73FBFD54E2"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6D303B7E52C34C8C"]
+			id: "2AB6620F14C5EDA8"
+			tasks: [{
+				id: "1905553010D3FB9F"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2AB6620F14C5EDA8"]
+			id: "11CB510C8574BC2D"
+			tasks: [{
+				id: "3FDF1C2A28DC2EC4"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0F4EE45EBC186660"]
+			id: "29D9E67A8135A881"
+			tasks: [{
+				id: "4B3B698EB8257B5E"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["29D9E67A8135A881"]
+			id: "6EA7EBD74F359ED3"
+			tasks: [{
+				id: "1C6B523DDB26AFDF"
+				item: {
+					Count: 1
+					id: "infinite_horizons_tweaks:iron_trowel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["29D9E67A8135A881"]
+			id: "125348C1C68D39CB"
+			optional: true
+			tasks: [{
+				id: "373DB2C7F3C112BB"
+				item: {
+					Count: 1
+					id: "infinite_horizons_tweaks:iron_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6EA7EBD74F359ED3"]
+			icon: "minecraft:cobbled_deepslate"
+			id: "7DAB6C60C8CBF330"
+			tasks: [
+				{
+					id: "2D66EC5955BFFF79"
+					item: "infinite_horizons_tweaks:deepslate_pebble"
+					type: "item"
+				}
+				{
+					id: "3AD67A5CEBFDA697"
+					item: "minecraft:cobbled_deepslate"
+					type: "item"
+				}
+			]
+			title: "Deepslate"
+			x: 13.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7DAB6C60C8CBF330"]
+			icon: "minecraft:tuff"
+			id: "4A262B85E1E0D6C8"
+			tasks: [
+				{
+					id: "3A3F113547F416F0"
+					item: "infinite_horizons_tweaks:tuff_pebble"
+					type: "item"
+				}
+				{
+					id: "49CE9B45936F42C5"
+					item: "minecraft:tuff"
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -3.0d
 		}
 	]
 	title: "Alpha"

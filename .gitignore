@@ -28,3 +28,6 @@ config/create-client.toml
 config/flywheel-client.toml
 config/ponder-client.toml
 user-prefs.json
+crash-reports/
+config/appleskin-client.toml
+config/MouseTweaks.config
