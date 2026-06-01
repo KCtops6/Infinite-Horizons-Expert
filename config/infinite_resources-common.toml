@@ -562,3 +562,12 @@
 		#Enable/Disable copper plate
 		enable_plate = true
 
+	[materials.obsidian]
+		#Texture style selection for obsidian_nugget. Options: IRON, GOLD, COPPER
+		#Allowed Values: IRON, GOLD, COPPER
+		nugget_texture_style = "IRON"
+		#Enable/Disable obsidian dust
+		enable_dust = true
+		#Enable/Disable obsidian plate
+		enable_plate = true
+
