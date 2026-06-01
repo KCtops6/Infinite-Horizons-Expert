@@ -15,6 +15,10 @@ ServerEvents.recipes(event => {
         event.remove({ id: `create:pressing/${ingot}_ingot` });
     });
     let removedIDs = [
-        'create:crafting/kinetics/millstone'
-    ]
+        'create:crafting/kinetics/millstone', 'create:crafting/materials/andesite_alloy',
+        'create:crafting/materials/andesite_alloy_from_zinc'
+    ];
+    removedIDs.forEach(id => {
+        event.remove({ id: id });
+    });
 });
