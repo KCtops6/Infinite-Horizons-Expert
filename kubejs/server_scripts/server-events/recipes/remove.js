@@ -15,7 +15,8 @@ ServerEvents.recipes(event => {
         'create:crafting/materials/andesite_alloy',
         'create:crafting/materials/andesite_alloy_from_zinc',
         'minecraft:flint_and_steel',
-        /thermal:fire_charge.*/
+        /thermal:fire_charge.*/,
+        'thermal:energy_cell'
     ];
     removedIDs.forEach(id => {
         event.remove({ id: id });

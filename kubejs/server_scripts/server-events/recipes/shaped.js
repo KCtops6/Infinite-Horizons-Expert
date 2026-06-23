@@ -164,4 +164,15 @@ ServerEvents.recipes(event => {
         G: 'infinite_resources:gold_plate',
         H: '#infinite_horizons_tweaks:hammers'
     }).damageIngredient('#infinite_horizons_tweaks:hammers').id('kubejs:shaped/minecraft/golden_boots');
+    event.shaped(Item.of('thermal:energy_cell', '{BlockEntityTag:{Energy:0,EnergyMax:1000000,EnergyRecv:1000,EnergySend:1000}}'), [
+        'CAC',
+        'IEI',
+        'CRC'
+    ], {
+        C: 'thermal:cured_rubber',
+        A: 'createaddition:modular_accumulator',
+        I: 'infinite_resources:iron_plate',
+        E: 'thermal:energy_cell_frame',
+        R: 'thermal:rf_coil'
+    }).id('kubejs:shaped/thermal/energy_cell');
 });
