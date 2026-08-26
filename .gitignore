@@ -32,3 +32,5 @@ crash-reports/
 config/appleskin-client.toml
 config/MouseTweaks.config
 BisectHosting.png
+config/createaddition-common.toml
+config/createsifter-common.toml
