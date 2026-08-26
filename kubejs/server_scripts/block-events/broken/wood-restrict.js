@@ -42,6 +42,7 @@ const VILLAGE_WOOD_BLOCKS = [
 BlockEvents.broken(event => {
     const { block, player } = event;
     if (!player) return;
+    if (player.isCreative()) return;
 
     if (VILLAGE_WOOD_BLOCKS.includes(block.id) && !player.stages.has(WOOD_STAGE_ID)) {
         event.player.tell(`§4§l[Locked] §cYou cannot mine this block yet! Complete the §e"Obtain a Stone or Iron Axe" §cquest in the §bAlpha §cchapter first.`);
