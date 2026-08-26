@@ -1109,6 +1109,22 @@
 			x: 13.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["61A708E2863694A6"]
+			description: ["You defintely need to be near a bed until you get your gear up and village protected."]
+			id: "4B207BE2B857FE7C"
+			tasks: [{
+				icon: "minecraft:red_bed"
+				id: "7E88FE4CD155C58E"
+				observe_type: 1
+				timer: 0L
+				title: "Find a Bed"
+				to_observe: "minecraft:beds"
+				type: "observation"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
 	]
 	title: "Alpha"
 }
