@@ -7,35 +7,70 @@
 	id: "1A53CCD762B8773C"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		dependencies: [
-			"3336071B1E3ACE63"
-			"29D9E67A8135A881"
-		]
-		description: ["Once you have access to Andesite Alloy, you can start towards automating your resources. First, you need to think about rotational energy generation..."]
-		icon: "create:andesite_alloy"
-		id: "4887C816B0CE0B99"
-		rewards: [{
-			id: "1CFDBE9F02E1800E"
-			item: "create:andesite_alloy"
-			random_bonus: 2
-			type: "item"
-		}]
-		subtitle: "Entering the Automation Age"
-		tasks: [
-			{
-				id: "6F3318843A85FAA7"
-				item: "kubejs:andesite_alloy_mixture"
-				type: "item"
-			}
-			{
-				id: "10B7FA2D8FC8F3B4"
+	quests: [
+		{
+			dependencies: [
+				"3336071B1E3ACE63"
+				"29D9E67A8135A881"
+			]
+			description: ["Once you have access to Andesite Alloy, you can start towards automating your resources. First, you need to think about rotational energy generation..."]
+			icon: "create:andesite_alloy"
+			id: "4887C816B0CE0B99"
+			rewards: [{
+				id: "1CFDBE9F02E1800E"
 				item: "create:andesite_alloy"
+				random_bonus: 2
 				type: "item"
-			}
-		]
-		x: 0.0d
-		y: 0.0d
-	}]
+			}]
+			subtitle: "Entering the Automation Age"
+			tasks: [
+				{
+					id: "6F3318843A85FAA7"
+					item: "kubejs:andesite_alloy_mixture"
+					type: "item"
+				}
+				{
+					id: "10B7FA2D8FC8F3B4"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4887C816B0CE0B99"]
+			id: "6BC399DA8A05109E"
+			tasks: [{
+				id: "68CC0E59F690D745"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6BC399DA8A05109E"]
+			id: "3E8C93A3CDDF4071"
+			tasks: [{
+				id: "329F6B4831E0BC33"
+				item: "create:depot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6BC399DA8A05109E"]
+			id: "13E31CA2A2DEDEF0"
+			tasks: [{
+				id: "21B886337EDAA825"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+	]
 	title: "Beta"
 }
