@@ -36,3 +36,8 @@ config/MouseTweaks.config
 BisectHosting.png
 config/createaddition-common.toml
 config/createsifter-common.toml
+config/cofh*
+config/thermal*
+config/no_punch_kill-common.toml
+config/createsifter-client.toml
+config/complicated_bees-common.toml
