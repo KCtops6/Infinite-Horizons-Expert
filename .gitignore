@@ -1,9 +1,11 @@
 .curseclient
 minecraftinstance.json
 changelog.txt
-.vscode/
-local/
-logs/
+/.vscode/
+/local/
+/logs/
+/mods/
+/shaderpacks/
 config/jei/
 config/fml.toml
 config/forge-client.toml
